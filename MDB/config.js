@@ -5,9 +5,11 @@ const connection = async ()  =>{
     try {
         const connect = await mongoose.connect(url)
         console.log("MDB connected successFully");
+        // console.log(connect);
+        
     
     } catch (error) {
-            console.log("the error : ", error);
+            console.log("DB error : ", error);
             process.exit()
     }
 }
